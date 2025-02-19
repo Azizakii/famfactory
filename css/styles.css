@@ -50,7 +50,7 @@ body {
 
 .wrapper {
   position: relative;
-  background: url("images/banner.jpg") center/cover no-repeat;
+  background: url("images/banner.png") center/cover no-repeat;
   height: 600px;
   color: #fff;
 }
