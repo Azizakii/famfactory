@@ -101,16 +101,17 @@
         max-width: 1200px;
         }
         
-        @media (max-width: 600px) {
-            
-        }
+
     }
 
     &-item {
-        width: 540px;
-        height: 350px;
-        object-fit: cover;
-        border-radius: 8px;
+        @media (max-width: 600px) {
+            width: 540px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
     }
 }
 

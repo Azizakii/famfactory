@@ -81,6 +81,7 @@ body {
 }
 @media (max-width: 600px) {
   .header__container {
+    padding-top: 30px;
     align-items: center;
     text-align: center;
   }
@@ -271,12 +272,14 @@ body {
     max-width: 1200px;
   }
 }
-.video-item {
-  width: 540px;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
+@media (max-width: 600px) {
+  .video-item {
+    width: 540px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 .about {
