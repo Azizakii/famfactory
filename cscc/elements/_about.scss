@@ -34,10 +34,10 @@
         @include flex(0, space-between, row);
         padding-top: 80px;
         gap: 10px;
-        max-width: 1125px;
+        max-width: 1085px;
 
         @media (max-width: 1205px) {
-            gap: 15px;
+            gap: 20px;
         }
 
         @media (max-width: 600px) {
@@ -55,6 +55,7 @@
         &-img{
             width: 350px;
             height: 210px;
+            border-radius: 9px;
         }
 
         &-title{

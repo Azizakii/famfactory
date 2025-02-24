@@ -77,7 +77,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  position: relative;
 }
 @media (max-width: 600px) {
   .header__container {
@@ -89,13 +88,13 @@ body {
 .header__contact {
   font-size: 14px;
   line-height: 16.8px;
-  position: relative;
-  top: 520px;
 }
 @media (max-width: 600px) {
   .header__contact {
     width: 100%;
     margin: 10px 0;
+    position: relative;
+    top: 520px;
   }
 }
 .header__logo {
@@ -322,11 +321,11 @@ body {
   flex-wrap: nowrap;
   padding-top: 80px;
   gap: 10px;
-  max-width: 1125px;
+  max-width: 1085px;
 }
 @media (max-width: 1205px) {
   .about__list {
-    gap: 15px;
+    gap: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -346,6 +345,7 @@ body {
 .about__service-img {
   width: 350px;
   height: 210px;
+  border-radius: 9px;
 }
 .about__service-title {
   text-align: center;
