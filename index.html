@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>Famfactory</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -47,7 +52,7 @@
             <div class="products__wrapper">
                 <ul class="products__list">
                     <li class="products__item">
-                        <img src="images/hoodi.png" alt="hoodies" class="product__item-img">
+                        <img src="images/hoodi.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Худи
@@ -58,7 +63,7 @@
                         </div>
                     </li>
                     <li class="products__item">
-                        <img src="images/tshirts.png" alt="hoodies" class="product__item-img">
+                        <img src="images/tshirts.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Футболки
@@ -69,7 +74,7 @@
                         </div>
                     </li>
                     <li class="products__item">
-                        <img src="images/switshots.png" alt="hoodies" class="product__item-img">
+                        <img src="images/switshots.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Свитшоты
@@ -80,7 +85,7 @@
                         </div>
                     </li>
                     <li class="products__item">
-                        <img src="images/pants.png" alt="hoodies" class="product__item-img">
+                        <img src="images/pants.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Штаны
@@ -91,7 +96,7 @@
                         </div>
                     </li>
                     <li class="products__item">
-                        <img src="images/shoppers.png" alt="hoodies" class="product__item-img">
+                        <img src="images/shoppers.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Шопперы
@@ -102,7 +107,7 @@
                         </div>
                     </li>
                     <li class="products__item">
-                        <img src="images/caps.png" alt="hoodies" class="product__item-img">
+                        <img src="images/caps.png" alt="hoodies" class="products__item-img">
                         <div class="products__item-wrapper">
                             <h5 class="products__item-name">
                                 Кепки
@@ -119,16 +124,44 @@
 
     <section class="video">
         <div class="container video__container">
-            <img src="images/видео.png" alt="video">
+            <img class="video-item"
+            src="images/видео.png" alt="video">
         </div>
     </section>
 
     <section class="about">
         <div class="container">
-            <h2 class="section-title">
-                Производство одежды для компаний, брендов, артистов
+            <h2 class="about__title">
+                Производство одежды<br> для компаний, брендов, артистов
             </h2>
-            <p class="section-text">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</p>
+            <p class="about__text">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</p>
+        </div>
+        <div class="about__services">
+            <div class="container">
+                <ul class="about__list">
+                    <li class="about__service">
+                        <img src="images/service__development.png" alt="Разработка лекал" class="about__service-img">
+                        <h3 class="about__service-title">Разработка лекал и дизайна</h3>
+                        <p class="about__service-text">
+                            Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров
+                        </p>
+                    </li>
+                    <li class="about__service">
+                        <img src="images/service__tailoring.png" alt="Пошив одежды" class="about__service-img">
+                        <h3 class="about__service-title">Пошив одежды на заказ</h3>
+                        <p class="about__service-text">
+                            Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам
+                        </p>
+                    </li>
+                    <li class="about__service">
+                        <img src="images/service__turnkey.png" alt="Бренд одежды" class="about__service-img">
+                        <h3 class="about__service-title">Бренд одежды под ключ</h3>
+                        <p class="about__service-text">
+                            Мы заботимся о каждом аспекте разработки продукта, предоставляя вам больше времени для продаж, маркетинга и развития вашего бренда.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     

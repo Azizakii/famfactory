@@ -47,16 +47,28 @@ body {
   padding: 0 20px;
   box-sizing: border-box;
 }
+@media (max-width: 1205px) {
+  .container {
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 
 .wrapper {
   position: relative;
-  background: url("images/banner.png") center/cover no-repeat;
+  background: url("../images/banner.jpg") center/cover no-repeat;
   height: 600px;
   color: #fff;
 }
 
 .header {
-  padding: 15px 0;
+  padding: 0 15px;
+  position: relative;
+  z-index: 10;
 }
 .header__container {
   display: flex;
@@ -64,9 +76,34 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .header__container {
+    align-items: center;
+    text-align: center;
+  }
+}
+.header__contact {
+  font-size: 14px;
+  line-height: 16.8px;
+  position: relative;
+  top: 520px;
+}
+@media (max-width: 600px) {
+  .header__contact {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 .header__logo {
   text-align: center;
+  font-family: "IBM Plex Mono", serif;
+}
+.logo {
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .banner__container,
@@ -77,7 +114,7 @@ body {
 
 .banner {
   margin-top: 100px;
-  height: 500px;
+  height: 670px;
 }
 .banner__overlay {
   position: absolute;
@@ -94,11 +131,17 @@ body {
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  max-height: 600px;
 }
 .banner__title {
   font-size: 60px;
   text-align: center;
   margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .banner__title {
+    font-size: 35px;
+  }
 }
 
 .button {
@@ -117,9 +160,24 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+@media (max-width: 1205px) {
+  .products {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 600px) {
+  .products {
+    padding-top: 70px;
+  }
+}
 .products__wrapper {
   padding-top: 70px;
   padding-bottom: 100px;
+}
+@media (max-width: 600px) {
+  .products__wrapper {
+    padding-top: 50px;
+  }
 }
 .products__list {
   display: flex;
@@ -133,6 +191,24 @@ body {
 }
 .products__item {
   flex: 1 1 calc(33.33% - 30px);
+}
+@media (max-width: 600px) {
+  .products__item {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+.products__item-img {
+  width: 359px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .products__item-img {
+    width: 250px;
+    height: 250px;
+  }
 }
 .products__item-wrapper {
   display: flex;
@@ -154,12 +230,22 @@ body {
   font-size: 50px;
   padding-bottom: 40px;
 }
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
 
 .section-text {
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
   line-height: 24px;
+}
+@media (max-width: 600px) {
+  .section-text {
+    font-size: 16px;
+  }
 }
 
 .video {
@@ -172,12 +258,95 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
+@media (max-width: 1205px) {
+  .video {
+    padding: 0;
+  }
+}
 .video__container {
   max-width: 1000px;
+}
+@media (max-width: 1205px) {
+  .video__container {
+    max-width: 1200px;
+  }
+}
+.video-item {
+  width: 540px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 
 .about {
   background-color: #dadada;
   padding-bottom: 100px;
+}
+.about__title {
+  max-width: 800px;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 48px;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  transform: scaleX(1.2);
+}
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 35px;
+    transform: none;
+  }
+}
+.about__text {
+  max-width: 700px;
+  padding-top: 45px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+}
+.about__list {
+  display: flex;
+  align-items: 0;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 80px;
+  gap: 10px;
+}
+@media (max-width: 1205px) {
+  .about__list {
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .about__list {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+}
+.about__service {
+  max-width: 350px;
+}
+.about__service-img {
+  width: 350px;
+  height: 210px;
+}
+.about__service-title {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  max-width: 200px;
+  margin: 0 auto;
+  transform: scaleX(1.2);
+}
+.about__service-text {
+  text-align: center;
+  line-height: 24px;
 }

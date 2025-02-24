@@ -1,24 +1,61 @@
 @use "../base/mixins" as *;
 
+$font-main: "IBM Plex Mono", serif;
+
+
 .wrapper {
     position: relative;
-    background: url("images/banner.png") center/cover no-repeat;
+    background: url("../images/banner.jpg") center/cover no-repeat;
     height: 600px;
     color: #fff;
 }
 
 .header {
-    padding: 15px 0;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
 
     &__container {
         @include flex(center, space-between);
+        width: 100%;
+        position: relative;
+        
+
+        @media (max-width: 600px) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__contact {
+        font-size: 14px;
+        line-height: 16.8px;
+        position: relative;
+        top: 520px;
+       
+
+        @media (max-width: 600px) {
+            width: 100%; 
+            margin: 10px 0; 
+        }
+        
+
     }
 
     &__logo {
         text-align: center;
-    }
+        font-family: $font-main;
 
-    
+        @media (max-width: 600px) {
+
+        }
+
+    }
+}
+
+.logo {
+    font-size: 25px;
+    line-height: 30px;
 }
 
 .banner__container,
@@ -29,7 +66,7 @@
 
 .banner {
     margin-top: 100px;
-    height: 500px;
+    height: 670px;
 
     &__overlay {
         position: absolute;
@@ -43,12 +80,17 @@
 
     &__container {
         @include flex(center, center, column);
+        max-height: 600px;
     }
 
     &__title {
         font-size: 60px;
         text-align: center;
         margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            font-size: 35px;
+        }
     }
 }
 
