@@ -46,6 +46,7 @@ $font-main: "IBM Plex Mono", serif;
     &__logo {
         text-align: center;
         font-family: $font-main;
+        padding-top: 30px;
 
         @media (max-width: 600px) {
 

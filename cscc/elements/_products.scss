@@ -1,7 +1,7 @@
 @use "../base/mixins" as *;
 .products {
     padding-top: 80px;
-    max-width: 900px;
+    max-width: 1125px;
     margin: 0 auto;
 
     @media (max-width: 1205px) {
@@ -28,14 +28,14 @@
     }
 
     &__item {
-        flex: 1 1 calc(33.33% - 30px);
+        flex: 1 1 calc(33.3% - 30px);
 
         @media (max-width: 600px) {
             flex: 1 1 calc(50% - 15px);
         }
 
-        &-img{
-            width: 359px;
+        &-img {
+            width: 350px;
             height: 350px;
             object-fit: cover;
             border-radius: 5px;
@@ -95,7 +95,7 @@
     }
 
     &__container {
-        max-width: 1000px;
+        max-width: 1125px;
 
         @media (max-width: 1205px) {
         max-width: 1200px;
@@ -105,6 +105,8 @@
     }
 
     &-item {
+        width: 1130px;
+
         @media (max-width: 600px) {
             width: 540px;
             height: 350px;
