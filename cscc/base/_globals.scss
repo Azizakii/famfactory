@@ -1,5 +1,10 @@
-body {
+@use "../base/variables" as *;
+
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     font-family: "Arial", sans-serif;
 }
 
@@ -9,11 +14,20 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 
-    @media (max-width: 1205px) {
+    @media (max-width: 76rem) {
         padding: 0;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 37.5rem) {
         padding: 0 15px;
     }
+}
+
+.button {
+    display: block;
+    border-radius: 8px;
+    background-color: $button-color;
+    text-align: center;
+    padding: 15px 30px;
+    color: $text-color-dark;
 }

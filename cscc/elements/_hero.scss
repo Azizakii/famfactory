@@ -1,0 +1,71 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.hero {
+    position: relative;
+    width: 100%;
+    background: url("/images/header.jpg") center/cover no-repeat;
+    height: 37.5rem;
+    color: $text-color-dark;
+    margin-top: -6.25rem;
+    margin-bottom: 5rem; 
+
+    @media (max-width: 37.5rem) { 
+        margin-bottom: 4.375rem; 
+        margin-top: -9rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        @media (max-width: 37.5rem) { 
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+    }
+
+    &__title {
+        font-size: 2.25rem; 
+        font-weight: bold;
+        margin-bottom: 1.25rem; 
+        padding-top: 12.5rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    background: $button-color;
+    color: $text-color-dark;
+    text-decoration: none;
+    border-radius: 0.3125rem; 
+
+    @media (hover: hover) {
+        &:hover {
+            border: 1px solid #000;
+        }
+      }
+}
+
+.logo {
+    font-size: 1.5625rem; 
+    line-height: 1.875rem; 
+}
+
+.hero__container,
+.header__container {
+    position: relative;
+    z-index: 2;
+}
+

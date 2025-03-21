@@ -1,0 +1,31 @@
+.fabrication {
+    margin-bottom: 8rem; 
+
+    @media (max-width: 37.5rem) {
+        margin-bottom: 5rem;
+    }
+
+    &-list {
+        margin-top: 4.375rem; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5625rem; 
+
+        @media (max-width: 37.5rem) { 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+
+    &__item-img {
+        width: 21.875rem; 
+        height: 21.875rem; 
+
+        @media (max-width: 37.5rem) {
+            width: 15.3rem;
+            height: 15.3rem;
+        }
+    }
+}
+

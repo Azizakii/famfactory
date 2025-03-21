@@ -12,158 +12,293 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container header__container">
-                <div class="header__contact">
-                    <span class="header__phone"><strong>+7 925 343 16 96</strong></span>
-                    <p class="header__text">Перезвоните мне</p>
-                </div>
 
-                <div class="header__logo">
-                    <h1 class="logo">FAMFACTORY</h1>
-                    <p class="logo__subtitle">ШВЕЙНАЯ ФАБРИКА</p>
-                </div>
+    <header class="header">
+        <div class="container header__container desktop">
+            <div class="header__contact header-item">
+                <a class="header__phone" href="tel:+79253431696"><strong>+7 925 343 16 96</strong></a>
+                <span class="header__text">Перезвоните мне</span>
+            </div>
+    
+            <div class="header__logo">
+                <h1 class="logo">FAMFACTORY</h1>
+                <span class="logo__subtitle">ШВЕЙНАЯ ФАБРИКА</span>
+            </div>
+    
+            <div class="header__contact header-item">
+                <a class="header__email" href="mailto:mail@famfactory.ru"><strong>MAIL@FAMFACTORY.RU</strong></a>
+                <span class="header__text">Наша почта</span>
+            </div>
+        </div>
 
-                <div class="header__contact">
-                    <span class="header__email"><strong>MAIL@FAMFACTORY.RU</strong></span>
-                    <p class="header__text">Наша почта</p>
+        <div class="container header__container mobile">
+    
+            <div class="header__logo">
+                <h1 class="logo">FAMFACTORY</h1>
+                <span class="logo__subtitle">ШВЕЙНАЯ ФАБРИКА</span>
+            </div>
+
+            <div class="header__wrapper">
+                <div class="header__contact header-item">
+                    <a class="header__phone" href="tel:+79253431696"><strong>+7 925 343 16 96</strong></a>
+                    <span class="header__text">Перезвоните мне</span>
+                </div>
+        
+                <div class="header__contact header-item">
+                    <a class="header__email" href="mailto:mail@famfactory.ru"><strong>MAIL@FAMFACTORY.RU</strong></a>
+                    <span class="header__text">Наша почта</span>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+    
 
-        <section class="banner">
-            <div class="banner__overlay"></div>
-            <div class="container banner__container">
-                <h2 class="banner__title">Сделано<br>в Санкт-Петербурге</h2>
+
+
+    <main class="main">
+        <section class="hero">
+            <div class="container hero__container">
+                <h2 class="hero__title">Сделано<br>в Санкт-Петербурге</h2>
                 <a href="#contact" class="button">Отправить запрос</a>
             </div>
         </section>
-    </div>
 
-    <section class="products">
-        <div class="container">
-            <h2 class="section-title">
-                Современный<br>мерчендайз для бизнеса
-            </h2>
-            <p class="section-text">
-                Над реализацией проектов по разработке и производству одеждыи аксессураов трудится огромная команда профессионалов, поэтому мы можем создавать проекты любой сложности и масштабов под ключ или воплотить конкретные задачи на любом из этапов производства.
-            </p>
-            <div class="products__wrapper">
-                <ul class="products__list">
-                    <li class="products__item">
-                        <img src="images/hoodi.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Худи
-                            </h5>
-                            <p class="products__item-text">
-                                от 1650 ₽
-                            </p>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <img src="images/tshirts.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Футболки
-                            </h5>
-                            <p class="products__item-text">
-                                от 510 ₽
-                            </p>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <img src="images/switshots.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Свитшоты
-                            </h5>
-                            <p class="products__item-text">
-                                от 890 ₽
-                            </p>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <img src="images/pants.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Штаны
-                            </h5>
-                            <p class="products__item-text">
-                                от 1230 ₽
-                            </p>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <img src="images/shoppers.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Шопперы
-                            </h5>
-                            <p class="products__item-text">
-                                от 330 ₽
-                            </p>
-                        </div>
-                    </li>
-                    <li class="products__item">
-                        <img src="images/caps.png" alt="hoodies" class="products__item-img">
-                        <div class="products__item-wrapper">
-                            <h5 class="products__item-name">
-                                Кепки
-                            </h5>
-                            <p class="products__item-text">
-                                от 400 ₽
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="video">
-        <div class="container video__container">
-            <img class="video-item"
-            src="images/видео.png" alt="video">
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <h2 class="about__title">
-                Производство одежды<br> для компаний, брендов, артистов
-            </h2>
-            <p class="about__text">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</p>
-        </div>
-        <div class="about__services">
+        <section class="products">
             <div class="container">
-                <ul class="about__list">
-                    <li class="about__service">
-                        <img src="images/service__development.png" alt="Разработка лекал" class="about__service-img">
-                        <h3 class="about__service-title">Разработка лекал и дизайна</h3>
-                        <p class="about__service-text">
-                            Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров
-                        </p>
+                <h2 class="section-title">
+                    Современный<br>мерчендайз для бизнеса
+                </h2>
+                <p class="section-text">
+                    Над реализацией проектов по разработке и производству одеждыи аксессураов трудится огромная команда профессионалов, поэтому мы можем создавать проекты любой сложности и масштабов под ключ или воплотить конкретные задачи на любом из этапов производства.
+                </p>
+                <div class="products__wrapper">
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <img src="images/hoodi.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Худи
+                                </h5>
+                                <p class="products__item-text">
+                                    от 1650 ₽
+                                </p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <img src="images/tshirts.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Футболки
+                                </h5>
+                                <p class="products__item-text">
+                                    от 510 ₽
+                                </p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <img src="images/switshots.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Свитшоты
+                                </h5>
+                                <p class="products__item-text">
+                                    от 890 ₽
+                                </p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <img src="images/pants.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Штаны
+                                </h5>
+                                <p class="products__item-text">
+                                    от 1230 ₽
+                                </p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <img src="images/shoppers.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Шопперы
+                                </h5>
+                                <p class="products__item-text">
+                                    от 330 ₽
+                                </p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <img src="images/caps.jpg" alt="hoodies" class="products__item-img">
+                            <div class="products__item-wrapper">
+                                <h5 class="products__item-name">
+                                    Кепки
+                                </h5>
+                                <p class="products__item-text">
+                                    от 400 ₽
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="container video__container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XaTwnKLQi4A?si=lFc8OK-hjltECN0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">
+                    Производство одежды<br> для компаний, брендов,</br> артистов
+                </h2>
+                <p class="about__text">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</p>
+                <div class="about__services">
+                    <div class="container">
+                        <ul class="about__list">
+                            <li class="about__service">
+                                <img src="images/service-development.jpg" alt="Разработка лекал" class="about__service-img">
+                                <h3 class="about__service-title">Разработка лекал и дизайна</h3>
+                                <p class="about__service-text">
+                                    Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров
+                                </p>
+                            </li>
+                            <li class="about__service">
+                                <img src="images/service-tailoring.jpg" alt="Пошив одежды" class="about__service-img">
+                                <h3 class="about__service-title">Пошив одежды на заказ</h3>
+                                <p class="about__service-text">
+                                    Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам
+                                </p>
+                            </li>
+                            <li class="about__service">
+                                <img src="images/service-turnkey.jpg" alt="Бренд одежды" class="about__service-img">
+                                <h3 class="about__service-title">Бренд одежды под ключ</h3>
+                                <p class="about__service-text">
+                                    Мы заботимся о каждом аспекте разработки продукта, предоставляя вам больше времени для продаж, маркетинга и развития вашего бренда.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="fabrication">
+            <div class="container">
+                <h2 class="section-title">Все вещи мы шьём на собственном производстве в Санкт-Петербурге по собственному дизайну и крою</h2>
+                <p class="section-text">А наши коллекции сделанные совместно с топовыми блогерами и артистами продаём</br> в онлайн и через собственные розничные магазины в Питере и Москве.</p>
+
+                <ul class="fabrication-list">
+                    <li class="fabrication__item"><img src="images/fabrication.jpg" alt="Производственный процесс" class="fabrication__item-img"></li>
+                    <li class="fabrication__item"><img src="images/fabrication-machine.jpg" alt="Швейная машина в работе" class="fabrication__item-img"></li>
+                    <li class="fabrication__item"><img src="images/fabrication-fabric.jpg" alt="Подготовка ткани" class="fabrication__item-img"></li>
+                    <li class="fabrication__item"><img src="images/fabrication-place.jpg" alt="Рабочее место швеи" class="fabrication__item-img"></li>
+                    <li class="fabrication__item"><img src="images/fabrication-product.jpg" alt="Готовая продукция" class="fabrication__item-img"></li>
+                    <li class="fabrication__item"><img src="images/fabrication-fancywork.jpg" alt="Процесс вышивки" class="fabrication__item-img"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shops">
+            <div class="container shops-container">
+                <h2 class="section-title">
+                    Магазины</br>в самом в центре Питера</br> и Москвы
+                </h2>
+                <p class="section-text">
+                    Мы можем организовать реализацию вашего товара, не только в онлайне, но и в наших розничных магазинах.
+                </p>
+
+                <ul class="shops-list">
+                    <li class="shops-item">
+                        <img src="images/shop-spb.jpg" alt="saint-peterburg" class="shops-img">
                     </li>
-                    <li class="about__service">
-                        <img src="images/service__tailoring.png" alt="Пошив одежды" class="about__service-img">
-                        <h3 class="about__service-title">Пошив одежды на заказ</h3>
-                        <p class="about__service-text">
-                            Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам
-                        </p>
-                    </li>
-                    <li class="about__service">
-                        <img src="images/service__turnkey.png" alt="Бренд одежды" class="about__service-img">
-                        <h3 class="about__service-title">Бренд одежды под ключ</h3>
-                        <p class="about__service-text">
-                            Мы заботимся о каждом аспекте разработки продукта, предоставляя вам больше времени для продаж, маркетинга и развития вашего бренда.
-                        </p>
+                    <li class="shops-item">
+                        <img src="images/shop-msc.jpg" alt="moscow" class="shops-img">
                     </li>
                 </ul>
             </div>
+        </section>
+
+        <section class="collaboration">
+            <div class="container">
+                <h2 class="section-title">
+                    Наши коллаборации
+                </h2>
+                <p class="section-text">
+                    С нами уже самые топовые инфлюенсеры.
+                </p>
+
+                <ul class="collaboration-list">
+                    <li class="collaboration__item">
+                        <img src="images/collaboration__1.jpg" alt="" class="collaboration__item-img">
+                    </li>
+                    <li class="collaboration__item"><img src="images/collaboration__2.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__3.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__4.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__5.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__6.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__7.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__8.jpg" alt="" class="collaboration__item-img"></li>
+                    <li class="collaboration__item"><img src="images/collaboration__9.jpg" alt="" class="collaboration__item-img"></li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container desktop">
+            <div class="footer__wrapper">
+        
+                <div class="footer__contact footer-item">
+                    <a href="tel:+79253431696" class="footer__phone">+7 925 343 16 96</a>
+                    <p class="footer__text">Перезвоните мне</p>
+                </div>
+
+                <div class="footer__logo footer-item">
+                    <h2 class="logo">FAMFACTORY</h2>
+                    <p class="logo__subtitle">Швейная фабрика в Санкт-Петербурге</p>
+                </div>
+        
+                <div class="footer__contact footer-item">
+                    <a href="mailto:MAIL@FAMFACTORY.RU" class="footer__email">MAIL@FAMFACTORY.RU</a>
+                    <p class="footer__text">Наша почта</p>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <button href="#contact" class="button footer-button">Отправить запрос</button>
+            </div>
         </div>
-    </section>
+    
+        
+        <div class="container footer__container mobile">
+            <div class="footer__logo footer-item">
+                <h2 class="logo">FAMFACTORY</h2>
+                <p class="logo__subtitle">Швейная фабрика</p>
+            </div>
+    
+            <div class="footer__bottom footer-item">
+                <button href="#contact" class="button footer-button">Отправить запрос</button>
+            </div>
+    
+            <div class="footer__contact footer-item">
+                <a href="tel:+79253431696" class="footer__phone">+7 925 343 16 96</a>
+                <p class="footer__text">Перезвоните мне</p>
+            </div>
+    
+            <div class="footer__contact footer-item">
+                <a href="mailto:MAIL@FAMFACTORY.RU" class="footer__email">MAIL@FAMFACTORY.RU</a>
+                <p class="footer__text">Наша почта</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
     
 </body>
 </html>

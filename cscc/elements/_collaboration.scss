@@ -1,0 +1,36 @@
+@use "../base/variables" as *;
+
+
+.collaboration {
+    margin-top: 6.25rem; 
+    padding-bottom: 4.2rem; 
+    background-color: $background-color-dark;
+    color: $text-color-light;
+
+    @media (max-width: 37.5rem) {
+        padding-bottom: 6rem;
+    }
+
+    &-list {
+        margin-top: 5rem; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.9375rem;
+
+        @media (max-width: 37.5rem) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 1.3rem;
+
+            .collaboration__item:last-child {
+                display: none;
+            }
+        }
+
+    }
+
+    &__item-img {
+        border-radius: 0.625rem;
+    }
+}

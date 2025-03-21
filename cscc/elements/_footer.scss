@@ -1,0 +1,80 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+
+.footer {
+    background-color: $background-color-dark;
+    position: relative;
+    color: $text-color-light;
+
+    &__container {
+        border-top: 1px solid grey;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        position: relative;
+
+    
+        &.desktop {
+            & .footer__wrapper{
+                @include flex(center, space-between);
+                text-align: center;
+            }
+
+            & .footer__bottom {
+                padding-top: 4rem;
+                margin: 0 auto;
+            }
+        }
+
+        &.mobile {
+            display: none;
+        }
+
+    
+        @media (max-width: 37.5rem) {
+            &.desktop {
+                display: none;
+            }
+
+            &.mobile {
+                padding-top: 3.5rem;
+                @include flex(flex-start, null, column);
+                gap: 2.7rem;
+            }
+        }
+    }
+
+    &-item {
+        @media (max-width: 37.5rem) {
+            
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: $background-color-light;
+                border-radius: 2px;
+                color: $text-color-dark;
+            }
+        }
+    }
+
+    &__bottom {
+        align-self: center;
+        width: max-content;
+
+        @media (max-width: 37.5rem) {
+            align-self: start;
+        }
+    }
+
+    &-button {
+        text-align: center;
+        border: none;
+        margin: 0 auto;
+        padding: 0.9rem 3.5rem;
+
+        @media (max-width: 37.5rem) {
+            padding: 0.9rem 2.6rem;
+        }
+    }
+}

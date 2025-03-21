@@ -1,107 +1,71 @@
 @use "../base/mixins" as *;
+@use "../base/variables" as *;
 
 $font-main: "IBM Plex Mono", serif;
 
-
-.wrapper {
-    position: relative;
-    background: url("../images/banner.jpg") center/cover no-repeat;
-    height: 600px;
-    color: #fff;
-}
-
 .header {
-    padding: 0 15px;
+    margin: 0 0.9375rem; 
     position: relative;
     z-index: 10;
+    background: transparent;
+    color: $text-color-light;
 
     &__container {
-        @include flex(center, space-between);
         width: 100%;
-        
 
-        @media (max-width: 600px) {
-            padding-top: 30px;
-            align-items: center;
-            text-align: center;
+        &.desktop {
+            @include flex(center, space-between);
+        }
+
+        &.mobile {
+            display: none;
+        }
+
+
+        @media (max-width: 37.5rem) {
+            &.desktop {
+                display: none;
+            }
+
+            &.mobile {
+                display: block;
+                & .header__wrapper {
+                    position: relative;
+                    top: 420px;
+                    @include flex(center, space-between);
+                }
+            }
+        }
+    }
+
+    &-item {
+
+        & a {
+            display: block;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: $background-color-light;
+                border-radius: 2px;
+                color: $text-color-dark;
+            }
         }
     }
 
     &__contact {
-        font-size: 14px;
-        line-height: 16.8px;
-       
+        font-size: 0.875rem; 
+        line-height: 1.05rem;
 
-        @media (max-width: 600px) {
-            width: 100%; 
-            margin: 10px 0; 
-            position: relative;
-            top: 520px;
+        @media (max-width: 37.5rem) { 
+
         }
-        
-
     }
 
     &__logo {
         text-align: center;
         font-family: $font-main;
-        padding-top: 30px;
-
-        @media (max-width: 600px) {
-
-        }
-
-    }
-}
-
-.logo {
-    font-size: 25px;
-    line-height: 30px;
-}
-
-.banner__container,
-.header__container {
-    position: relative;
-    z-index: 2;
-}
-
-.banner {
-    margin-top: 100px;
-    height: 670px;
-
-    &__overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        z-index: 1;
+        margin-top: 1rem;
     }
 
-    &__container {
-        @include flex(center, center, column);
-        max-height: 600px;
-    }
-
-    &__title {
-        font-size: 60px;
-        text-align: center;
-        margin-bottom: 20px;
-
-        @media (max-width: 600px) {
-            font-size: 35px;
-        }
-    }
-}
-
-.button {
-    display: block;
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    background-color: #F4DF74;
-    text-align: center;
-    padding: 15px;
-    color: #000;
 }
